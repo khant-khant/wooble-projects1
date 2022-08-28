@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WOOBLE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <!-- nav-bar -->
+  <nav class="navbar bg-light">
+    <div class="container">
+      <a class="navbar-brand">WOOBLE</a>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control form-control-sm me-2"
+          type="search"
+          placeholder="Search products..."
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+      <a
+        class="btn btn-info text-white"
+        data-bs-toggle="offcanvas"
+        href="#cart-sidebar"
+        role="button"
+        aria-controls="cart-sidebar"
+        ><i class="fa-solid fa-cart-plus"></i
+      ></a>
+    </div>
+  </nav>
+  <body>
+    <div class="slider-frame">
+      <div class="slide-images">
+        <div class="img-container">
+          <img src="images/ocean-1.jpg" alt="" />
+        </div>
+        <div class="img-container">
+          <img src="images/ocean-2.jpg" alt="" />
+        </div>
+        <div class="img-container">
+          <img src="images/ocean-3.jpg" alt="" />
+        </div>
+        <div class="img-container">
+          <img src="images/ocean-4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cart-sidebar"
+      aria-labelledby="cartSidebarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartSidebarLabel">Your Cart</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <section class="cart-items mt-5">
+          <!-- cart-item-container -->
+        </section>
+        <hr class="mt-4" />
+        <!-- total-row -->
+        <div class="row justify-content-end mt-5 fs-4">
+          <p class="col-8">Total</p>
+          <span class="cart-total-price col-3"></span>
+        </div>
+      </div>
+    </div>
+
+    <main class="container my-5">
+      <section class="row">
+        <div class="buy-item card col me-3">
+          <img
+            class="buy-item-image"
+            src="images/exo-ls.webp"
+            class="card-img-top"
+            alt="exo-ls"
+          />
+          <div class="card-body">
+            <h5 class="buy-item-title card-title">EXO LIGHTSTICK</h5>
+            <p class="buy-item-price card-text">89000</p>
+            <a href="#" class="btn btn-info btn-primary buy-item-button"
+              ><i class="fa-solid fa-cart-plus"></i
+            ></a>
+          </div>
+        </div>
+        <div class="buy-item card col me-3">
+          <img
+            class="buy-item-image"
+            src="images/blackpink-ls.webp"
+            class="card-img-top"
+            alt="blackpink-ls"
+          />
+          <div class="card-body">
+            <h5 class="buy-item-title card-title">BLACKPINK LIGHTSTICK</h5>
+            <p class="buy-item-price card-text">88000</p>
+            <a href="#" class="btn btn-info btn-primary buy-item-button"
+              ><i class="fa-solid fa-cart-plus"></i
+            ></a>
+          </div>
+        </div>
+        <div class="buy-item card col me-3">
+          <img
+            class="buy-item-image"
+            src="images/bts-ls.jpg"
+            class="card-img-top"
+            alt="bts-ls.jpg"
+          />
+          <div class="card-body">
+            <h5 class="buy-item-title card-title">BTS LIGHTSTICK</h5>
+            <p class="buy-item-price card-text">100000</p>
+            <a href="#" class="btn btn-info btn-primary buy-item-button"
+              ><i class="fa-solid fa-cart-plus"></i
+            ></a>
+          </div>
+        </div>
+        <div class="buy-item card col">
+          <img
+            class="buy-item-image"
+            src="images/nct-ls.webp"
+            class="card-img-top"
+            alt="nct-ls"
+          />
+          <div class="card-body">
+            <h5 class="buy-item-title card-title">NCT LIGHTSTICK</h5>
+            <p class="buy-item-price card-text">78000</p>
+            <a href="#" class="btn btn-info btn-primary buy-item-button"
+              ><i class="fa-solid fa-cart-plus"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="row mt-3">
+        <div class="buy-item card col me-3">
+          <img
+            class="buy-item-image"
+            src="images/superm-ls.webp"
+            class="card-img-top"
+            alt="superm-ls"
+          />
+          <div class="card-body">
+            <h5 class="buy-item-title card-title">SUPER-M LIGHTSTICK</h5>
+            <p class="buy-item-price card-text">85000</p>
+            <a href="#" class="btn btn-info btn-primary buy-item-button"
+              ><i class="fa-solid fa-cart-plus"></i
+            ></a>
+          </div>
+        </div>
+        <div class="buy-item card col me-3">
+          <img
+            class="buy-item-image"
+            src="images/red-velvet-ls.webp"
+            class="card-img-top"
+            alt="red-velvet-ls"
+          />
+          <div class="card-body">
+            <h5 class="buy-item-title card-title">RED VELVET LIGHTSTICK</h5>
+            <p class="buy-item-price card-text">77000</p>
+            <a href="#" class="btn btn-info btn-primary buy-item-button"
+              ><i class="fa-solid fa-cart-plus"></i
+            ></a>
+          </div>
+        </div>
+        <div class="buy-item card col me-3">
+          <img
+            class="buy-item-image"
+            src="images/boa-ls.webp"
+            class="card-img-top"
+            alt="boa-ls"
+          />
+          <div class="card-body">
+            <h5 class="buy-item-title card-title">BOA LIGHTSTICK</h5>
+            <p class="buy-item-price card-text">85000</p>
+            <a href="#" class="btn btn-info btn-primary buy-item-button"
+              ><i class="fa-solid fa-cart-plus"></i
+            ></a>
+          </div>
+        </div>
+        <div class="buy-item card col">
+          <img
+            class="buy-item-image"
+            src="images/tvxq-LS.webp"
+            class="card-img-top"
+            alt="tvxq-ls"
+          />
+          <div class="card-body">
+            <h5 class="buy-item-title card-title">TVXQ LIGHTSTICK</h5>
+            <p class="buy-item-price card-text">68000</p>
+            <a href="#" class="btn btn-info btn-primary buy-item-button"
+              ><i class="fa-solid fa-cart-plus"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- YOUR CART -->
+    </main>
+  </body>
+  <footer>
+    <div>
+      <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div>
+      <a href="2nd-page/index.html">Help</a>
+    </div>
+    <div>
+      <button type="button" class="btn btn-info">Contact Us</button>
+    </div>
+  </footer>
+</html>
