@@ -9,7 +9,9 @@ function initUI() {
   const addToCartButtons = document.querySelectorAll(".buy-item-button");
   addToCartButtons.forEach((button) => {
     button.addEventListener("click", handleAddToCart);
+    
   });
+  
 }
 
 function handleAddToCart(event) {
@@ -30,6 +32,7 @@ function addItemToCartUI(title, price, image) {
       alert("Item already Added");
       return;
     }
+   
   }
 
   const cartRowContent = `<div class="cart-item row justify-content-between align-items-center border py-3">

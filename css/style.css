@@ -3,14 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 nav {
-  max-width: 1280px;
   padding: 10px;
   position: sticky;
   top: 0px;
 }
 
 body {
-  max-width: 1280px;
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -18,12 +16,10 @@ body {
 }
 
 
-
 .slider-frame {
   overflow: hidden;
-  height: 280px;
-  width: 1140px;
-  margin-left: 70px;
+  min-width: 1120px;
+  height: 300px;
   margin-top: 20px;
 }
 
@@ -46,7 +42,7 @@ body {
   height: 800px;
   margin: 0 0 0 -2400px;
   position: relative;
-  -webkit-animation-name: slide_animation;;
+  -webkit-animation-name: slide_animation;
   -webkit-animation-duration: 33s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -54,7 +50,7 @@ body {
 }
 
 .img-container {
-  height: 1000px;
+  height: 800px;
   width: 1200px;
   position: relative;
   float: left;
@@ -113,6 +109,10 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 100%;
+}
+
+.help-page a {
+  text-decoration: none;
 }
 
 footer {
